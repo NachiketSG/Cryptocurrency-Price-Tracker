@@ -1,70 +1,105 @@
-# Getting Started with Create React App
+# Cryptocurrency Price Tracker
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A real-time web application for tracking cryptocurrency prices, viewing historical charts, managing favorite coins, and analyzing market trends. Built with React.js and integrated with CoinGecko API for live cryptocurrency data.
 
-## Available Scripts
+**Live Website:** https://crypto-price-tracker-lime.vercel.app
 
-In the project directory, you can run:
+**GitHub Repository:** https://github.com/NachiketSG/Cryptocurrency-Price-Tracker
 
-### `npm start`
+---
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Table of Contents
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+1. Project Overview
+2. Features
+3. Technologies Used
+4. Project Structure
+5. Installation and Setup
+6. API Integration
+7. Environment Variables
+8. Deployment
+9. Week-wise Development Summary
+10. Future Enhancements
+11. Contact
 
-### `npm test`
+---
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Project Overview
 
-### `npm run build`
+The Cryptocurrency Price Tracker is a responsive web application that allows users to monitor real-time cryptocurrency prices, view interactive historical price charts, and manage their favorite cryptocurrencies through personalized user accounts. The application fetches live data from the CoinGecko API and displays prices in both USD and INR with real-time exchange rate conversion.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+This project was developed over 8 weeks following an agile development methodology. Each week focused on specific features including project setup, UI design, real-time updates, chart integration, filtering and sorting, user authentication, performance optimization, and deployment.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+---
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Features
 
-### `npm run eject`
+### Core Features
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- Real-time cryptocurrency prices in USD and INR
+- Live exchange rate conversion from USD to INR
+- Interactive historical price charts with zoom and pan
+- Multiple chart time ranges (24 hours, 7 days, 30 days, 90 days, 1 year)
+- Filter cryptocurrencies by market cap, gainers, losers
+- Sort cryptocurrencies by price, market cap, volume, and 24-hour change
+- Search cryptocurrencies by name or symbol
+- User authentication with email and password
+- Save favorite cryptocurrencies to personal profile
+- Responsive design for mobile, tablet, and desktop
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Technical Features
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- Component-based architecture using React
+- Global state management with React Context API
+- Performance optimization with memoization
+- REST API integration with CoinGecko
+- Firebase Authentication for user management
+- Firestore database for storing user favorites
+- Interactive charts using Chart.js
+- Zoom and pan functionality for detailed chart analysis
+- Production build optimization
+- Vercel deployment with continuous integration
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+---
 
-## Learn More
+## Technologies Used
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### Frontend
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+| Technology | Version | Purpose |
+|------------|---------|---------|
+| React.js | 18.x | Frontend framework |
+| JavaScript (ES6+) | - | Core programming language |
+| HTML5 | - | Structure |
+| CSS3 | - | Styling and animations |
 
-### Code Splitting
+### Libraries and APIs
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+| Library/API | Version | Purpose |
+|-------------|---------|---------|
+| Chart.js | 4.x | Interactive charts |
+| react-chartjs-2 | 5.x | React wrapper for Chart.js |
+| chartjs-plugin-zoom | 2.x | Zoom and pan for charts |
+| CoinGecko API | - | Cryptocurrency data |
+| ExchangeRate-API | - | Real-time USD to INR conversion |
 
-### Analyzing the Bundle Size
+### Backend and Database
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+| Service | Purpose |
+|---------|---------|
+| Firebase Authentication | User signup, login, logout |
+| Firestore | Store user favorites |
 
-### Making a Progressive Web App
+### Development and Deployment
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+| Tool | Purpose |
+|------|---------|
+| Git | Version control |
+| GitHub | Repository hosting |
+| Vercel | Production deployment |
+| npm | Package management |
+| Create React App | Project scaffolding |
 
-### Advanced Configuration
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
 
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
